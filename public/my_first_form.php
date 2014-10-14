@@ -40,7 +40,65 @@ var_dump($_POST)
 		<textarea id="body" name="body" type="text" placeholder="Enter Email Body"></textarea>
 	</p>
 	<p>
+	<label for="mailing_list">
+    <input type="checkbox" id="mailing_list" name="mailing_list" value="yes">
+    <label for="mailing_list">Save copy to your sent folder?</label>
+	</label>
+	</p>
+	<p>
 	<button type="submit">Send!</button>
 	</p>
+</form>
+<h2>My Multiple Choice Test</h2>
+<form method "POST" action="my_first_form.php">
+	
+	<p>What is pyroclastic flow?</p>
+	<label>
+    	<input type="radio" id="q1a" name="q1" value="current">
+    	a river current
+	</label>
+	<label>
+    	<input type="radio" id="q1b" name="q1" value="lava">
+    	lava flow
+	</label>
+	<label>
+    	<input type="radio" id="q1c" name="q1" value="runoff">
+    	runoff
+	</label>
+	<label>
+    	<input type="radio" id="q1d" name="q1" value="ashgas">
+    	ash and gas flow
+	</label>
+	<p>
+	<button type="submit">Send!</button>
+	</p>
+	<p>I've got one less (___?) without you.</p>
+	<label>
+    	<input type="radio" id="q2a" name="q2" value="problem">
+    	Problem
+	</label>
+	<label>
+    	<input type="radio" id="q2b" name="q2" value="question">
+    	Question
+	</label>
+	<label>
+    	<input type="radio" id="q2c" name="q2" value="answer">
+    	Answer
+	</label>
+	<label>
+    	<input type="radio" id="q2d" name="q2" value="statement">
+    	Statement
+	</label>
+	<p>
+	<button type="submit">Send!</button>
+	</p>
+	<p>What are you learning in CodeUp?</p>
+		<label><input type="checkbox" id="code1" name="os[]" value="php"> Php</label>
+		<label><input type="checkbox" id="code2" name="os[]" value="html"> HTML</label>
+		<label><input type="checkbox" id="code3" name="os[]" value="css"> CSS</label>
+		<p>
+		<button type="submit">Send!</button>
+		</p>
+</form>
 </body>
 </html>

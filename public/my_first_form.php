@@ -7,7 +7,7 @@ var_dump($_POST)
 
 <html>
 <head>My First HTML Form</head>
-	<body>
+	<body align="center">
 
 		<form method="POST" action="my_first_form.php">
 			<p>
@@ -129,5 +129,5 @@ var_dump($_POST)
 					<button type="submit">Send!</button>
 					</p>
 			</form>
-	</body>
+	</body align="center">
 </html>

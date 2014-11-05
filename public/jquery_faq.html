@@ -21,14 +21,13 @@
 			$(this).children().first().css('font-weight', 'bold');
 		});
 		$('h3').click(function() {
-	        $(this).next('ul').toggle();
+	        $(this).next('ul').fadeToggle(1000);
 	    });
 
 	    $('dd').hide();
 
 	    $('dt').click(function() {
-	    	console.log('hwat');
-	    	$(this).next('dd').toggle();
+	    	$(this).next('dd').fadeToggle(1000);
 	    });
     });
    	
@@ -41,7 +40,7 @@
 <h1>Dinosaur FAQs</h1>
 <p>=======================================================</p><br>
 
-	<!--<a href="#" id="toggle">Click to toggle the highlighting of important text.</a><br><br>-->
+	<a href="#" id="toggle">Click to toggle the highlighting of important text.</a><br><br>
 	<dl>
 	    
 	    <dt>What does dinosaur mean?</dt>

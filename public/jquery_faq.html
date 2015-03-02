@@ -2,21 +2,23 @@
 <html>
 <head>
 	<title>JQuery FAQ's</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.2/css/bootstrap.min.css">	
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<style>
-        body {
-            background-image: url(img/trex.png);
-            background-repeat: no-repeat;
-            text-align: center; 
+        .trex {
+            margin-right: auto;
         }
         .first {
             width: 400px;
             margin-left: auto;
+            margin-top: 50px;
         }
         .toggle {
             width: 400px;
-            margin: auto;
+            margin-left: 30px;
+        }
+        .bary {
+            margin-right: auto;
         }
         /*. {
         	display: none;
@@ -44,13 +46,12 @@
 </head>
 
     <body>
-
-        <div class="container">
-            <div class="first text-right">
-                <h1>Dinosaur FAQs</h1>
-            	<a href="#" id="toggle">Click to toggle the highlighting of important text.</a><br><br>
-            	<dl> 
-            	    <dt>What is a dinosaur?</dt>
+        <h1 class="text-center">Dinosaur FAQs</h1>
+        <div class="row">
+            <img class="col-md-8" src="img/trex.png">
+            <div class="col-md-4 first text-right">
+            	<dl>
+                    <dt>What is a dinosaur?</dt>
             	    <dd>Reptiles with erect limb posture, plus the three bones of the pelvis are joined to form an open hip socket for reception of the thigh bone, as well as the longest finger is the second finger.</dd><br>
 
             	    <dt>Where did Dinosaurs live?</dt>
@@ -76,33 +77,35 @@
             	    
             	    <dt>Where is the best place to find information?</dt>
             	    <dd>The library (first and foremost!), followed by natural history museums (second), then the internet, and finally (and certainly last) TV programs.</dd><br>
-            	   </dl>
-            	   <p><em>facts taken from <a href="http://paleobiology.si.edu/dinosaurs/info/faq/faq_10.html">Smithsonian Museum of Natural History</a></em></p><br><br>
+                </dl>
+                <p><em>facts taken from <a href="http://paleobiology.si.edu/dinosaurs/info/faq/faq_10.html">Smithsonian Museum of Natural History</a></em></p><br><br>
             </div>
-
-            <div class="toggle text-center">
-             	<h3 class="species">Tyrannosaurus Rex</h3>
-             		<ul class="dinosaur">
-             			<li>Arguably the most famous dinosaur.</li>
-             			<li>Constantly argued if a scavenger or predator.</li>
-             			<li>The largest specimen is 13ft tall at the hips.</li>
-             			<li>And 40ft long.</li>
-             		</ul>
-             	<h3 class="species">Spinosaurus aegyptiacus</h3>
-             		<ul class="dinosaur">
-             			<li>May be the largest of all known carnivorous dinosaurs.</li>
-             			<li>Scientists are still unsure what its sail was for.</li>
-             			<li>Its depiction in Jurassic Park III is now innaccurate.</li>
-             			<li>It moved more like a crocodile with long legs.</li>
-             		</ul>
-             	<h3 class="species">Sauroposeidon proteles</h3>
-             		<ul class="dinosaur">
-             			<li>Tallest known animal to walk the earth.</li>
-             			<li>Lived around the shores of the Gulf of Mexico.</li>
-             			<li>High tree top browser.</li>
-             			<li>More closely related to Titanosaur than the Brachiosaur.</li>
-             		</ul>
+        </div>
+        <div class="row">
+            <div class="col-md-4 toggle text-left">
+                <h3 class="species">Tyrannosaurus Rex</h3>
+                <ul class="dinosaur">
+                    <li>Arguably the most famous dinosaur.</li>
+                    <li>Constantly argued if a scavenger or predator.</li>
+                    <li>The largest specimen is 13ft tall at the hips.</li>
+                    <li>And 40ft long.</li>
+                </ul>
+                <h3 class="species">Spinosaurus Aegyptiacus</h3>
+                <ul class="dinosaur">
+                    <li>May be the largest of all known carnivorous dinosaurs.</li>
+                    <li>Scientists are still unsure what its sail was for.</li>
+                    <li>Its depiction in Jurassic Park III is now innaccurate.</li>
+                    <li>It moved more like a crocodile with long legs.</li>
+                </ul>
+                <h3 class="species">Sauroposeidon Proteles</h3>
+                <ul class="dinosaur">
+                    <li>Tallest known animal to walk the earth.</li>
+                    <li>Lived around the shores of the Gulf of Mexico.</li>
+                    <li>High tree top browser.</li>
+                    <li>More closely related to Titanosaur than the Brachiosaur.</li>
+                </ul>
             </div>
+            <img class="col-md-8 bary" src="img/baryonyx.png">
         </div>
     </body>
 </html>

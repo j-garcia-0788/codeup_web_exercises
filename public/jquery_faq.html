@@ -10,6 +10,10 @@
             background-repeat: no-repeat;
             text-align: center; 
         }
+        .first {
+            width: 400px;
+            margin-left: auto;
+        }
         .toggle {
             width: 400px;
             margin: auto;
@@ -41,45 +45,42 @@
 
     <body>
 
-        <div class="container text-right">
-        <h1>Dinosaur FAQs</h1>
+        <div class="container">
+            <div class="first text-right">
+                <h1>Dinosaur FAQs</h1>
+            	<a href="#" id="toggle">Click to toggle the highlighting of important text.</a><br><br>
+            	<dl> 
+            	    <dt>What is a dinosaur?</dt>
+            	    <dd>Reptiles with erect limb posture, plus the three bones of the pelvis are joined to form an open hip socket for reception of the thigh bone, as well as the longest finger is the second finger.</dd><br>
 
-        	<a href="#" id="toggle">Click to toggle the highlighting of important text.</a><br><br>
-        	<dl>
-        	    
-        	    <dt>Who hasn't seen Jurassic Park before?</dt>
-        	    <dd>Drink.</dd><br>
-        	   
-        	    <dt>What is a dinosaur?</dt>
-        	    <dd class="">Reptiles with erect limb posture, plus the three bones of the pelvis are joined to form<br>an open hip socket for reception of the thigh bone, as well as the longest finger is the second finger.</dd><br>
-            	<dd class="">
-        	    <dt>Where did Dinosaurs live?</dt>
-        	    <dd class="">Every. Single. Continent.</dd><br>
-            	
-            	<dt>When did dinosaurs live?</dt>
-        	    <dd class="">They lived in the Mesozoic Era, 230 million - 65 million years ago.</dd><br>
-        	    
-        	    <dt>How many species are there?</dt>
-        	    <dd class="">Over 1000 Mesozoic (non-bird) dinosaurs have been given scientific names since 1824,<br>when they were first discovered.</dd><br>
-        	    
-        	    <dt>Why were dinosaurs so big?</dt>
-        	    <dd class="">Like some species of reptile, they continued to grow throughout a healthy and able lifetime.<br> Since many grew so big, they had few natural predators.</dd><br>
-        	    
-        	    <dt>Did they really have feathers?</dt>
-        	    <dd class="">Many species's fossils have been found with preserved feathers.</dd><br>
-        	    
-        	    <dt>What was the biggest Dinosaur?</dt>
-        	    <dd class="">The biggest, longest, and tallest were definitely the sauropods. The dinosaurs on four<br> legs and long necks.</dd><br>
-        	    
-        	    <dt>Are all dinosaurs extinct?</dt>
-        	    <dd class="">7/8ths of all species of dinosaurs are exctinct. Modern day birds evolved from one the<br> subgroups of therapods.</dd><br>
-        	    
-        	    <dt>Where is the best place to find information?</dt>
-        	    <dd class="">The library (first and foremost!), followed by natural history museums (second), then the<br> internet, and finally (and certainly last) TV programs.</dd><br>
-        	</dl>
-        	<p><em>facts taken from <a href="http://paleobiology.si.edu/dinosaurs/info/faq/faq_10.html">Smithsonian Museum of Natural History</a></em></p><br><br>
-         	
-            <div class="toggle">
+            	    <dt>Where did Dinosaurs live?</dt>
+            	    <dd>Every. Single. Continent.</dd><br>
+                	
+                	<dt>When did dinosaurs live?</dt>
+            	    <dd>They lived in the Mesozoic Era, 230 million - 65 million years ago.</dd><br>
+            	    
+            	    <dt>How many species are there?</dt>
+            	    <dd >Over 1000 Mesozoic (non-bird) dinosaurs have been given scientific names since 1824, when they were first discovered.</dd><br>
+            	    
+            	    <dt>Why were dinosaurs so big?</dt>
+            	    <dd >Like some species of reptile, they continued to grow throughout a healthy and able lifetime. Since many grew so big, they had few natural predators.</dd><br>
+            	    
+            	    <dt>Did they really have feathers?</dt>
+            	    <dd>Many species's fossils have been found with preserved feathers.</dd><br>
+            	    
+            	    <dt>What was the biggest Dinosaur?</dt>
+            	    <dd>The biggest, longest, and tallest were the sauropods. The dinosaurs on four legs and long necks.</dd><br>
+            	    
+            	    <dt>Are all dinosaurs extinct?</dt>
+            	    <dd>7/8ths of all species of dinosaurs are exctinct. Modern day birds evolved from one the subgroups of therapods.</dd><br>
+            	    
+            	    <dt>Where is the best place to find information?</dt>
+            	    <dd>The library (first and foremost!), followed by natural history museums (second), then the internet, and finally (and certainly last) TV programs.</dd><br>
+            	   </dl>
+            	   <p><em>facts taken from <a href="http://paleobiology.si.edu/dinosaurs/info/faq/faq_10.html">Smithsonian Museum of Natural History</a></em></p><br><br>
+            </div>
+
+            <div class="toggle text-center">
              	<h3 class="species">Tyrannosaurus Rex</h3>
              		<ul class="dinosaur">
              			<li>Arguably the most famous dinosaur.</li>
@@ -103,6 +104,5 @@
              		</ul>
             </div>
         </div>
-
     </body>
 </html>

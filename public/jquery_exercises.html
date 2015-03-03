@@ -14,22 +14,33 @@
 	<script>
 		
 		$('document').ready(function() {
-			  $('li').css('font-size', '20px');
-			  $('li, p, h1').css('background-color', '#FF0');
-        });
+			$('.header').click(function() {
+                $('h1').css('background-color', '#FF0');
+            });
+			
+			$('.container').dblclick(function() {
+                $('p, li').css('font-size', '18px');
+            });
 
+            $('.list').hover(function() {
+                    $('li').css('color', 'red');
+                },
+                function() {
+                    $('li').css('color', 'black');
+	            });
+        });
 
 	</script>
 
 </head>
 <body>
 <div class="important">
-<div class="codeup">
-<h1 id="Query" class="codeup">JQuery!</h1>
+<div class="container">
+<h1 id="Query" class="header">JQuery!</h1>
 
 <p>Hi there! This is a test for JQuery. Holla at ya test!</p>
 
-<div id="list" class="codeup">
+<div id="list" class="list">
 	<ul>
 		<li>1</li>
 		<li>2</li>

@@ -5,6 +5,9 @@
 <body>
 
     <h1 id="main-header">Hello World!</h1>
+    <br><br>
+    <button id="btn1">Change the Header!</button>
+    <br><br>
     <ul>
         <li data-dbid="1">Item 1</li>
         <li data-dbid="2">Item 2</li>
@@ -12,64 +15,20 @@
         <li data-dbid="4">Item 4</li>
         <li data-dbid="5">Item 5</li>
     </ul>
+    <br>
+    <button id="btn3">Change the list text!</button>
+    <br>
     <h2 id="sub-header">Hello Again.</h2>
+    <br><br>
+    <button id="btn2">Change the Subheader to blue!</button>
+    <br><br>
     <p class="sub-paragraph">
         This is the first line in the paragraph.
     </p>
+    <br><br>
+    <button id="btn4">Change the paragraph!</button>
 
-    <script>
-
-        // todo: get the main header element by id
-        // var mainHeader = ;
-        var mainHeader = document.getElementById('main-header');
-    	console.log(mainHeader); // prints <button id="btnToClick" class="btn btn-primary">Click Me</button>
-    	console.log(typeof mainHeader);
-
-        // todo: set inner html of mainHeader to "JavaScript is Cool"
-        var mainHeading = document.getElementById('main-header');
-		console.log(mainHeading.innerHTML); // prints Hello World!
-
-    	// assign a new value to the inner HTML of the main heading
-    	mainHeading.innerHTML = "JavaScript is Cool!";
-		console.log(mainHeading.innerHTML); 
-       
-       // todo: get the sub header element by id
-        var subHeader = document.getElementById('sub-header');
-
-        // todo: set the text color of subHeader to blue
-		subHeader.style['color'] = 'blue';
-        console.log(subHeader.style['color']);
-
-        // todo: get all list items
-        
-        var listItems = document.getElementsByTagName('li');
-
-        // todo: set text color on every other list item to grey
-        
-       	for (var i = 0; i < listItems.length; i++) {
-               
-               if (i % 2 == 0) {
-                    listItems[i].style['color'] = 'grey';
-               }
-
-               var dbId = listItems[i].attributes['data-dbid'].value;
-
-               if (dbId == "1")  {          
-                  listItems[0].style['color'] = 'blue';
-              }
-          }
-        
-        //todo: set text color of li with dbid = 1 to blue
-        
-        // todo: get all elements with class name sub-paragraph
-        
-        var subParagraphs = document.getElementsByClassName('sub-paragraph');
-        console.log(subParagraphs);
-
-        // todo: change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs[0].innerHTML = "Mission Accomplished!";
-    
-    </script>
+    <script src="js/button.js"></script>
 
 </body>
 </html>

@@ -8,7 +8,7 @@
 
 do {
 	var response = prompt('What is your name?');
-} while (response == '' || response == null);
+} 	while (response == '' || response == null);
 	
 	console.log(response);
 
@@ -17,5 +17,5 @@ do {
 
 	var pizza = confirm('Do you enjoy pizza?');
 
-	alert(confirm == true ? 'Pizza is always interesting' : 'Get Out');
+	alert(pizza == true ? 'Pizza is always interesting' : 'Get Out');
 

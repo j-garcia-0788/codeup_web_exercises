@@ -6,8 +6,14 @@ var_dump($_POST)
 ?>
 
 <html>
-<head>My First HTML Form</head>
-	<body align="center">
+<head>My First HTML Form
+	<style>
+	body {
+		text-align: center;
+	}
+	</style>
+</head>
+	<body>
 
 		<form method="POST" action="my_first_form.php">
 			<p>
@@ -129,5 +135,6 @@ var_dump($_POST)
 					<button type="submit">Send!</button>
 					</p>
 			</form>
-	</body align="center">
+	</body>
 </html>
+

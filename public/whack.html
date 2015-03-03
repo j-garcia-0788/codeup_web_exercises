@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Whack!</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script type="text/javascript">
+		$('document').ready(function() {
+       		
+       		$('img').hide().one("load",function(){
+	    		$(this).slideIn(2000);
+			}).each(function(){
+			    if(this.complete) $(this).trigger("load");
+			});
+			$('img').click(function() {
+                $('img').slideToggle(2000);
+            });
+		});
+	</script>
+
+</head>
+<body>
+	<img src="img/jurassicpark_trex.png">
+</body>
+</html>

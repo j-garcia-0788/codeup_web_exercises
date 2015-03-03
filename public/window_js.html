@@ -1,45 +1,64 @@
 <html>
-<head>
-    <title>Delayed Autosave</title>
-</head>
-<body>
-    <h2>Autosaving Text Input</h2>
-    <textarea rows="10" cols="60" id="important"></textarea>
+    
+    <head>
+        <title>Delayed Autosave</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript"></script>
+        <style >
+        .important {
+                text-align: center;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <div class="important">
+            <h2>Autosaving Text Input</h2>
+            <textarea rows="10" cols="20" id="important"></textarea>
+        </div>
+        
+        <script>
 
-    <script>
+        //globally defined timer
+        var timer;
 
-    //globally defined timer
-    var timer;
+            function save() {
+                console.log('This will only run if no additional keyup events are triggered.');
+            }
 
-        function save() {
-            console.log('This will only run if no additional keyup events are triggered.');
-        }
+            function autosave() {
+    			
+    			//console log timer each time.
+    			console.log(timer);
 
-        function autosave() {
-			
-			//console log timer each time.
-			console.log(timer);
+    			//clear timer from previous event.
+    			clearTimeout(timer);
 
-			//clear timer from previous event.
-			clearTimeout(timer);
+    			//locally defined timer.
+    			timer = setTimeout(function () { save(); }, 5000);
 
-			//locally defined timer.
-			timer = setTimeout(function () { save(); }, 5000);
+    		}
+                // todo:
+                // Use setTimeout and clearTimeout within this function
+                // so that the save() function is called 5 seconds after
+                // the last key up event. If a new key up event occurs,
+                // you need to cancel the existing timer and set a new one.
+    		
+                // $('#important').keyup(function() 
+                //     alert('.keyup() event fired');
+                //  });
+                $('#important').keyup(autosave);
 
-		}
-            // todo:
-            // Use setTimeout and clearTimeout within this function
-            // so that the save() function is called 5 seconds after
-            // the last key up event. If a new key up event occurs,
-            // you need to cancel the existing timer and set a new one.
-		
-        // don't modify the line below
-        // this causes the autosave function to be called whenever
-        // a key up event occurs in the textarea
-        // we will learn about events in the DOM lessons
-        var textarea = document.getElementById('important');
-        textarea.addEventListener('keyup', autosave, false);
+            // don't modify the line below
+            // this causes the autosave function to be called whenever
+            // a key up event occurs in the textarea
+            // we will learn about events in the DOM lessons
+            
+            // var textarea = document.getElementById('important');
+            // textarea.addEventListener('keyup', autosave, false);
 
-    </script>
-</body>
+        </script>
+    </body>
 </html>

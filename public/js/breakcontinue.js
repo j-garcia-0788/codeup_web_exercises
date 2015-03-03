@@ -1,13 +1,13 @@
 do {
 	var random = Math.floor((Math.random()*50)+1);  
-} while(random % 2 ==0)
+} while (random % 2 ==0)
 
 
 //while(true) {
 	//var random = Math.floor((Math.random()*50)+1); 
 	//if(random % 2 !=0);
 	//break;
-}
+  //}
 
 console.log('here is the random Odd number: ' + random)
 
